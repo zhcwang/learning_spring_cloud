@@ -1,7 +1,9 @@
 spring:
   application:
     name: EUREKA-HA
----
+--- notice spring.profiles attribute means one configuration suit when run application
+--- you can use several profiles in same application.yml but only one is validate when run
+--- you need to add profile file in run-->editconfiguration-->active profile input
 server:
   port: 8761
 spring:
