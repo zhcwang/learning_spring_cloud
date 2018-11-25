@@ -9,6 +9,7 @@ import org.springframework.web.client.RestTemplate;
 import com.itmuch.cloud.entity.User;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
+import org.springframework.web.context.annotation.SessionScope;
 
 @RestController
 public class MovieController {
