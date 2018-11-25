@@ -15,7 +15,7 @@ public class HystrixClientFactory implements FallbackFactory<UserFeignClient> {
 
   @Override
   public UserFeignClient create(Throwable cause) {
-    HystrixClientFactory.LOGGER.info("fallback; reason was: {}", cause.getMessage());
+    LOGGER.info("fallback; reason was: {}", cause.getMessage());
     return new UserFeignClientWithFactory() {
       @Override
       public User findById(Long id) {

@@ -13,7 +13,7 @@ turbine:
   aggregator:
     clusterConfig: MICROSERVICE-CONSUMER-MOVIE-RIBBON-WITH-HYSTRIX2
   appConfig: microservice-consumer-movie-ribbon-with-hystrix2
-  
+#如要要监控的instance已经配置了webroot (server.context-path: /xxx),则必须同在再turebin端声明路径
 turbine.instanceUrlSuffix.MICROSERVICE-CONSUMER-MOVIE-RIBBON-WITH-HYSTRIX2: /ribbon/hystrix.stream
 
 logging: 
