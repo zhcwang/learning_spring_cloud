@@ -1,3 +1,4 @@
+#此例子用来说明针对特定的微服务配置特定的路径
 spring:
   application:
     name: microservice-gateway-zuul
@@ -12,6 +13,6 @@ eureka:
 zuul:
   routes:
     abc:
+    #name abc 可以任意写
       path: /user-path/**
       serviceId: microservice-provider-user
-    

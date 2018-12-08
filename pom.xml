@@ -35,6 +35,7 @@
 		<module>microservice-discovery-eureka</module>
 		<module>microservice-discovery-eureka-ha</module>
 		<module>microservice-sidecar</module>
+		<module>microservice-file-upload</module>
 	</modules>
 	
 	<properties>

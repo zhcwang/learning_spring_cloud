@@ -11,7 +11,7 @@ eureka:
     prefer-ip-address: true
 zuul:
   prefix: /simple
-  strip-prefix: false
+  strip-prefix: true #使用代理服务的prefix
 logging:
   level:
     com.netflix: debug

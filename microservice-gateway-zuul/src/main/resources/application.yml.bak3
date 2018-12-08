@@ -1,3 +1,4 @@
+#此例子使用微服务URL的方式配置映射
 spring:
   application:
     name: microservice-gateway-zuul

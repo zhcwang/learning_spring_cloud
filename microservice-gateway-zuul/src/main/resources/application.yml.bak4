@@ -1,3 +1,4 @@
+#整合ribbon做客户端负载均衡
 spring:
   application:
     name: microservice-gateway-zuul

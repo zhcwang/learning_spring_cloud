@@ -10,7 +10,7 @@ eureka:
   instance:
     prefer-ip-address: true
 zuul:
-  prefix: /api
+  prefix: /api #给请求到zuul的地址加上前缀
   strip-prefix: false
 logging:
   level:

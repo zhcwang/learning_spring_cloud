@@ -1,3 +1,4 @@
+#次离子用来说明如何忽略某些微服务只映射关心的服务
 spring:
   application:
     name: microservice-gateway-zuul
@@ -9,8 +10,8 @@ eureka:
       defaultZone: http://user:password123@localhost:8761/eureka
   instance:
     prefer-ip-address: true
+#如果启用了@EnableZuulProxy而不在配置文件中写任何zuul相关的配置，则默认使用微服务spring.application.name作为url的第一级，后续接正常的controller
 zuul:
   ignoredServices: microservice-consumer-movie-ribbon-with-hystrix
-  routes:
-    microservice-provider-user: /user/**
-    
+      routes:
+        microservice-provider-user: /user/**
