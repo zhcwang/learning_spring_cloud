@@ -11,3 +11,8 @@ spring:
           
 encrypt:
   key: foo
+
+#对指定key加密
+#curl -X POST http://localhost:8080/encrypt -d wangzhc
+#对指定密码解密
+#curl -X POST http://localhost:8080/decrypt -d xxxxxxxxxxxxxxx
