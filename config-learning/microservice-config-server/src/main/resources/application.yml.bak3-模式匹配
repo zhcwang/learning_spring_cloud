@@ -5,9 +5,10 @@ spring:
     config:
       server:
         git:
-          uri: https://git.oschina.net/it-much/config-repo-51cto-video      # 公用
+          uri: https://gitee.com/wangzhc/springcloud_config      # 公用
           repos:
-            simple: https://git.oschina.net/it-much/simple
+            simple: https://gitee.com/wangzhc/simple
             special:
+              #{application}/{profile}
               pattern: special*/dev*,special*/test*
-              uri: https://git.oschina.net/it-much/special
+              uri: https://gitee.com/wangzhc/special

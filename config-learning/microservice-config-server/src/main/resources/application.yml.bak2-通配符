@@ -1,3 +1,4 @@
+#实现一个git仓库对应一个微服务，必须要求微服务名称和git仓库名称能简单映射
 server:
   port: 8080
 spring:
@@ -5,4 +6,4 @@ spring:
     config:
       server:
         git:
-          uri: https://git.oschina.net/it-much/{application}
+          uri: https://gitee.com/wangzhc/{application}
